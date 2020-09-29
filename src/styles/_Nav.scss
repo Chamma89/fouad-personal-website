@@ -1,0 +1,35 @@
+nav {
+  align-items: center;
+  background-color: #003366;
+  display: flex !important;
+  justify-content: space-around;
+  min-height: 10vh;
+  position: relative;
+
+  li {
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    &::after {
+      content: "";
+      width: 0px;
+      height: 1px;
+      display: block;
+      background: white;
+      transition: 300ms;
+    }
+
+    &:hover::after {
+      width: 100%;
+    }
+  }
+}
+
+.nav-links {
+  align-items: center;
+  display: flex;
+  font-size: 1.8rem;
+  justify-content: space-around;
+  list-style: none;
+  width: 50%;
+}

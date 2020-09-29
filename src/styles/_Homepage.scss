@@ -1,0 +1,22 @@
+.homepage__header {
+  background-color: $navyBlue;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  height: 60vh;
+  justify-content: center;
+  text-align: center;
+
+  h1 {
+    font-size: 4rem;
+    font-weight: 600;
+  }
+}
+
+.homepage__header p {
+  font-size: 2rem;
+}
+
+.heading-font {
+  font-family: "Roboto", sans-serif;
+}

@@ -7,12 +7,12 @@ class Homepage extends Component {
     return (
       <div className="homepage">
         <div className="homepage__header">
-          <h1 className="mb-5">Fouad Chamma</h1>
+          <h1 className="mb-5 animate__bounce">Fouad Chamma</h1>
           <p>Front-end developer</p>
           <p>Problem solver</p>
           <p>Passionate about tech</p>
         </div>
-        <div className="container">
+        <div className="homepage__container container">
           <h2 className="homepage__h2 text-center">Work history</h2>
           <div className="row work-section">
             <div className="work-section__img col-md-4">
@@ -23,11 +23,11 @@ class Homepage extends Component {
             </div>
           </div>
           <div className="row work-section">
-            <div className="work-section__img col-md-4">
-              <img src={WorkLogo1} alt="" />
+            <div className="col-md-8 order-1">
+              <p>I worked at countryff road</p>
             </div>
-            <div className="col-md-8">
-              <p>I worked at country road</p>
+            <div className="work-section__img col-md-4 order-sm-12">
+              <img src={WorkLogo1} alt="" />
             </div>
           </div>
         </div>

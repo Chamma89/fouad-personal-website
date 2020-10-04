@@ -2,7 +2,7 @@
 
 .nav {
   align-items: center;
-  background-color: #003366;
+  background-color: $navyBlue;
   display: flex !important;
   justify-content: space-around;
   min-height: 10vh;
@@ -43,7 +43,13 @@
 
   &__logo {
     background-color: $creamWhite;
+    border: 2px solid $charcoal;
     border-radius: $standardBorderRadius;
     padding: 15px;
   }
+}
+
+nav .navbar-toggler {
+  padding: 10px;
+  background-color: white;
 }

@@ -1,3 +1,17 @@
+@mixin headingEssentials {
+  font-weight: 600;
+  font-family: $headingFont;
+}
+
+.homepage {
+  h2 {
+    @include headingEssentials();
+    color: $cadillacRed;
+    font-size: 3rem;
+    padding: 20px;
+  }
+}
+
 .homepage__header {
   background-color: $navyBlue;
   color: #fff;
@@ -5,18 +19,34 @@
   flex-direction: column;
   height: 60vh;
   justify-content: center;
+  padding: 20px;
   text-align: center;
 
   h1 {
+    @include headingEssentials();
+
     font-size: 4rem;
-    font-weight: 600;
+  }
+
+  p {
+    font-size: 2rem;
   }
 }
 
-.homepage__header p {
-  font-size: 2rem;
+.work-section {
+  margin-bottom: 40px;
 }
 
-.heading-font {
-  font-family: "Roboto", sans-serif;
+.work-section__img {
+  align-items: center;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
+    0 0 40px rgba(250, 240, 230, 0.1) inset;
+  display: flex;
+  height: 300px;
+  justify-content: center;
+  width: 400px;
+
+  img {
+    width: 350px;
+  }
 }

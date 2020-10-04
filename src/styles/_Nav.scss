@@ -1,6 +1,6 @@
 @import "./Variables";
 
-#nav {
+.nav {
   align-items: center;
   background-color: #003366;
   display: flex !important;
@@ -8,10 +8,11 @@
   min-height: 10vh;
   position: relative;
 
-  .nav-link {
+  &__nav-link {
     color: #fff;
     cursor: pointer;
     text-decoration: none;
+
     &::after {
       content: "";
       width: 0px;
@@ -19,6 +20,11 @@
       display: block;
       background: white;
       transition: 300ms;
+    }
+
+    &:hover {
+      color: #fff;
+      font-weight: 600;
     }
 
     &:hover::after {
@@ -35,7 +41,7 @@
     width: 100%;
   }
 
-  .logo {
+  &__logo {
     background-color: $creamWhite;
     border-radius: $standardBorderRadius;
     padding: 15px;
